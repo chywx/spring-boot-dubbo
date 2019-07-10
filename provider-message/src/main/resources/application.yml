@@ -1,0 +1,16 @@
+server:
+  port: 8082
+
+
+dubbo:
+  application:
+    name: sea-provider-message
+  registry:
+    protocol: zookeeper
+    address: www.chendahai.cn:2181
+  protocol:
+    name: dubbo
+    port: 20888
+  version: 1.0.0
+  scan:
+    base-packages: com.message

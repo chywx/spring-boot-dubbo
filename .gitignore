@@ -1,0 +1,17 @@
+# intellij
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# logs
+logs/
+
+target
+build
+deploy
+
+*.bak
+*.class
+
+#*/src/main/resources/application-local.yml

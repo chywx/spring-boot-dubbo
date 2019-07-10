@@ -1,0 +1,16 @@
+server:
+  port: 8088
+
+
+dubbo:
+  application:
+    name: sea-consumer-web
+  registry:
+    protocol: zookeeper
+    address: www.chendahai.cn:2181
+  protocol:
+    name: dubbo
+    port: 20889
+  version: 1.0.0
+  scan:
+    base-packages: com.web
