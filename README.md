@@ -5,13 +5,13 @@
 > 统一entity和service管理
 
 ## provider-log
-> 服务端之一，提供log服务
+> 服务端之一，提供log服务，并未添加web依赖
 
 ## provider-message
-> 服务端之一，提供message服务
+> 服务端之一，提供message服务，添加了web依赖
 
 ## consumer
-> 客户端
+> 客户端，添加但原车测试
 
 ## pom依赖
 
