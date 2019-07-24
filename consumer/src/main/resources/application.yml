@@ -7,7 +7,7 @@ dubbo:
     name: sea-consumer-web
   registry:
     protocol: zookeeper
-    address: 192.168.1.222:2181
+    address: hy.chendahai.cn:2181
   protocol:
     name: dubbo
     port: 20889
