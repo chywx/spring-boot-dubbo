@@ -1,5 +1,5 @@
-#server:
-#  port: 8081
+server:
+  port: 8081
 
 
 dubbo:
@@ -7,10 +7,10 @@ dubbo:
     name: sea-provider-log
   registry:
     protocol: zookeeper
-    address: hy.chendahai.cn:2181
+    address: www.chendahai.cn:2181
   protocol:
     name: dubbo
-    port: 20889
+    port: 20888
   version: 1.0.1
   scan:
     base-packages: com.log
