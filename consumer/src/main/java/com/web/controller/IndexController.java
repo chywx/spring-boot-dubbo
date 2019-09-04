@@ -13,7 +13,7 @@ public class IndexController {
     @Reference(version = "1.0.0",check = false)
     private UserInfoService userInfoService;
 
-    @Reference(version = "1.0.1",check = false)
+    @Reference(version = "1.0.1",check = false,async = true)
     private ErrorLogService errorLogService;
 
     @RequestMapping("aaa")
@@ -27,7 +27,16 @@ public class IndexController {
         ErrorLog errorLog = new ErrorLog();
         errorLog.setName("error");
         System.out.println(errorLogService.sendMsg(errorLog));
+        System.out.println("haha");
         return "bbb";
+    }
+
+    @RequestMapping("ccc")
+    public void ccc(){
+        ErrorLog errorLog = new ErrorLog();
+        errorLog.setName("dahai");
+        errorLogService.asyncSendMsg(errorLog);
+        System.out.println(123);
     }
 
 

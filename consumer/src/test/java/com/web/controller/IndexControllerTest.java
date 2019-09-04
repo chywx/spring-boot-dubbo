@@ -36,7 +36,18 @@ public class IndexControllerTest {
         ErrorLog errorLog = new ErrorLog();
         errorLog.setName("error");
         System.out.println(errorLogService.sendMsg(errorLog));
+        System.out.println(123);
     }
+
+
+    @Test
+    public void ccc(){
+        ErrorLog errorLog = new ErrorLog();
+        errorLog.setName("dahai");
+        errorLogService.asyncSendMsg(errorLog);
+        System.out.println(123);
+    }
+
 
 
 
