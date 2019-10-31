@@ -1,16 +1,13 @@
 package com.web.controller;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.entity.ErrorLog;
 import com.service.ErrorLogService;
 import com.service.UserInfoService;
-import org.apache.dubbo.config.annotation.Reference;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import static org.junit.Assert.*;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)

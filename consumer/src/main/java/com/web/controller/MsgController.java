@@ -1,7 +1,7 @@
 package com.web.controller;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.service.SmsService;
-import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/msg")
 public class MsgController {
 
-    @Reference(version = "1.0.1")
+    @Reference(version = "1.0.1",check = false)
     SmsService smsServiceLog;
 
     @Reference(version = "1.0.0")

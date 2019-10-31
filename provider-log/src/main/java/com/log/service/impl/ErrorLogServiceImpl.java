@@ -1,9 +1,8 @@
 package com.log.service.impl;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.entity.ErrorLog;
 import com.service.ErrorLogService;
-import org.apache.dubbo.config.annotation.Service;
-
 import java.util.concurrent.TimeUnit;
 
 @Service(version = "${dubbo.version}",async = false)

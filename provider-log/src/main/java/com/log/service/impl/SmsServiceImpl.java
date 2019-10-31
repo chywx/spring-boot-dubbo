@@ -1,7 +1,7 @@
 package com.log.service.impl;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.service.SmsService;
-import org.apache.dubbo.config.annotation.Service;
 
 /**
  * 功能描述

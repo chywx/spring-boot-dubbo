@@ -1,9 +1,9 @@
 package com.web.controller;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.entity.ErrorLog;
 import com.service.ErrorLogService;
 import com.service.UserInfoService;
-import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

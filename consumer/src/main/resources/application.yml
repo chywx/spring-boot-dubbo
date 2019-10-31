@@ -15,5 +15,4 @@ dubbo:
   scan:
     base-packages: com.web
   consumer:
-    check: false
     timeout: 5000
