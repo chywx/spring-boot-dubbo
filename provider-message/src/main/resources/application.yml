@@ -1,5 +1,5 @@
 server:
-  port: 8082
+  port: 5053
 
 
 dubbo:
@@ -10,7 +10,7 @@ dubbo:
     address: www.chendahai.cn:2181
   protocol:
     name: dubbo
-    port: 20889
+    port: 20553
   version: 1.0.0
   scan:
     base-packages: com.message

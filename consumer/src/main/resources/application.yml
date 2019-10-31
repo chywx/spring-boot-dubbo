@@ -1,5 +1,5 @@
 server:
-  port: 8088
+  port: 5051
 
 
 dubbo:
@@ -10,7 +10,10 @@ dubbo:
     address: www.chendahai.cn:2181
   protocol:
     name: dubbo
-    port: 20889
+    port: 20551
   version: 1.0.0
   scan:
     base-packages: com.web
+  consumer:
+    check: false
+    timeout: 5000
