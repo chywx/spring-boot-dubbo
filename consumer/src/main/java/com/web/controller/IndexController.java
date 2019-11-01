@@ -4,7 +4,7 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import com.entity.ErrorLog;
 import com.service.ErrorLogService;
 import com.service.UserInfoService;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -16,13 +16,13 @@ public class IndexController {
     @Reference(version = "1.0.1",check = false,async = true)
     private ErrorLogService errorLogService;
 
-    @RequestMapping("aaa")
+    @GetMapping("aaa")
     public String aaa(){
         System.out.println(userInfoService.getUserInfo(1));
         return "aaa";
     }
 
-    @RequestMapping("bbb")
+    @GetMapping("bbb")
     public String bbb(){
         ErrorLog errorLog = new ErrorLog();
         errorLog.setName("error");
@@ -31,7 +31,7 @@ public class IndexController {
         return "bbb";
     }
 
-    @RequestMapping("ccc")
+    @GetMapping("ccc")
     public void ccc(){
         ErrorLog errorLog = new ErrorLog();
         errorLog.setName("dahai");
