@@ -1,6 +1,6 @@
 package com.log.service.impl;
 
-import com.alibaba.dubbo.config.annotation.Service;
+import org.apache.dubbo.config.annotation.Service;
 import com.entity.ErrorLog;
 import com.service.ErrorLogService;
 import java.util.concurrent.TimeUnit;

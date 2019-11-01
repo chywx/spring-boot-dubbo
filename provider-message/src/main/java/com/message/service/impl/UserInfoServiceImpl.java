@@ -1,6 +1,6 @@
 package com.message.service.impl;
 
-import com.alibaba.dubbo.config.annotation.Service;
+import org.apache.dubbo.config.annotation.Service;
 import com.entity.UserInfo;
 import com.service.UserInfoService;
 

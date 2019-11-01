@@ -1,6 +1,6 @@
 package com.web.controller;
 
-import com.alibaba.dubbo.config.annotation.Reference;
+import org.apache.dubbo.config.annotation.Reference;;
 import com.entity.ErrorLog;
 import com.service.ErrorLogService;
 import com.service.UserInfoService;

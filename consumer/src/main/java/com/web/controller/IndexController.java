@@ -1,6 +1,6 @@
 package com.web.controller;
 
-import com.alibaba.dubbo.config.annotation.Reference;
+import org.apache.dubbo.config.annotation.Reference;;
 import com.entity.ErrorLog;
 import com.service.ErrorLogService;
 import com.service.UserInfoService;
@@ -16,13 +16,13 @@ public class IndexController {
     @Reference(version = "1.0.1",check = false,async = true)
     private ErrorLogService errorLogService;
 
-    @GetMapping("aaa")
+    @GetMapping("/aaa")
     public String aaa(){
         System.out.println(userInfoService.getUserInfo(1));
         return "aaa";
     }
 
-    @GetMapping("bbb")
+    @GetMapping("/bbb")
     public String bbb(){
         ErrorLog errorLog = new ErrorLog();
         errorLog.setName("error");
@@ -31,7 +31,7 @@ public class IndexController {
         return "bbb";
     }
 
-    @GetMapping("ccc")
+    @GetMapping("/ccc")
     public void ccc(){
         ErrorLog errorLog = new ErrorLog();
         errorLog.setName("dahai");
