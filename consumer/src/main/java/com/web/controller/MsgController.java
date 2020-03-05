@@ -16,10 +16,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/msg")
 public class MsgController {
 
-    @Reference(version = "1.0.1",check = false)
+    @Reference(version = "1.0.1", check = false, async = true)
     SmsService smsServiceLog;
 
-    @Reference(version = "1.0.0")
+    @Reference(version = "1.0.0", check = false)
     SmsService smsServiceMessage;
 
     @GetMapping("/send1")
@@ -30,6 +30,12 @@ public class MsgController {
     @GetMapping("/send2")
     public String send2() {
         return smsServiceMessage.sendMsg("world");
+    }
+
+    @GetMapping("/send3")
+    public String send3() {
+        smsServiceLog.sendMsgVoid("123");
+        return "success";
     }
 
 }

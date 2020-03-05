@@ -10,4 +10,6 @@ public interface SmsService {
 
     String sendMsg(String msg);
 
+    void sendMsgVoid(String msg);
+
 }

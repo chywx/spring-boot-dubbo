@@ -16,4 +16,9 @@ public class SmsServiceImpl implements SmsService {
     public String sendMsg(String msg) {
         return "message project send msg is " + msg;
     }
+
+    @Override
+    public void sendMsgVoid(String msg) {
+
+    }
 }

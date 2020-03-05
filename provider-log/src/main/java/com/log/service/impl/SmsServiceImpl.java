@@ -16,4 +16,9 @@ public class SmsServiceImpl implements SmsService {
     public String sendMsg(String msg) {
         return "log project send msg is " + msg;
     }
+
+    @Override
+    public void sendMsgVoid(String msg) {
+        System.out.println("sendMsgVoid log");
+    }
 }
