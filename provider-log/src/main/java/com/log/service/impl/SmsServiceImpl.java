@@ -19,6 +19,8 @@ public class SmsServiceImpl implements SmsService {
 
     @Override
     public void sendMsgVoid(String msg) {
-        System.out.println("sendMsgVoid log");
+        System.out.println("sendMsgVoid log enter");
+        int i = 1 / 0;
+        System.out.println("sendMsgVoid log out");
     }
 }
