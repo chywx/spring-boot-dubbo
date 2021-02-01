@@ -15,6 +15,7 @@
         <module>provider-log</module>
         <module>provider-message</module>
         <module>consumer</module>
+      <module>provider-xxp</module>
     </modules>
 
 

@@ -1,0 +1,16 @@
+server:
+  port: 5054
+
+
+dubbo:
+  application:
+    name: sea-provider-message
+  registry:
+    protocol: zookeeper
+    address: chendahai.cn:2181
+  protocol:
+    name: dubbo
+    port: 20554
+  version: 1.0.0
+  scan:
+    base-packages: com.message
