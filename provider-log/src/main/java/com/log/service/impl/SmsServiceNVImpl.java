@@ -1,7 +1,7 @@
 package com.log.service.impl;
 
-import org.apache.dubbo.config.annotation.Service;
 import com.service.SmsService;
+import org.apache.dubbo.config.annotation.Service;
 
 /**
  * 功能描述
@@ -9,13 +9,13 @@ import com.service.SmsService;
  * @author chy
  * @date 2019/10/23 0023
  */
-@Service(version = "${dubbo.version}")
-public class SmsServiceImpl implements SmsService {
+@Service
+public class SmsServiceNVImpl implements SmsService {
 
     @Override
     public String sendMsg(String msg) {
-        System.out.println("log project");
-        return "log project send msg is " + msg;
+        System.out.println("SmsServiceNVImpl");
+        return "SmsServiceNVImpl project send msg is " + msg;
     }
 
     @Override
