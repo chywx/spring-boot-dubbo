@@ -5,8 +5,9 @@ import com.entity.ErrorLog;
 import com.service.ErrorLogService;
 import java.util.concurrent.TimeUnit;
 
-@Service(version = "${dubbo.version}",async = false)
+@Service(version = "${dubbo.version}", async = false)
 public class ErrorLogServiceImpl implements ErrorLogService {
+
     @Override
     public String sendMsg(ErrorLog errorLog) {
         try {
@@ -14,8 +15,9 @@ public class ErrorLogServiceImpl implements ErrorLogService {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("receive：" + errorLog);
-        return "ok";
+        String name = errorLog.getName();
+        System.out.println("receive：" + name);
+        return "ok:" + name;
     }
 
     @Override
